@@ -7,9 +7,7 @@ from textgenrnn import textgenrnn
 
 
 def replace_junk(tweet):
-    """
-    Clean data... trying to get meaninful words/sentences/phrases so avoiding links, handles, and extra whitespace
-    """
+    """Clean data... trying to get meaninful words/sentences/phrases so avoiding links, handles, and extra whitespace"""
     tweet = tweet.replace('&amp;', '&').replace('&lt;', '<').replace('&gt;', '>').replace('"', '')
     tweet = re.sub(r'http[^\s]+', '', tweet)
     tweet = re.sub(r'@[^\s]+', '', tweet)
@@ -17,9 +15,7 @@ def replace_junk(tweet):
 
 
 def should_use(filename, start, end):
-    """
-    Check if filename starts and ends how it should
-    """
+    """Check if filename starts and ends how it should"""
     return filename.startswith(start) and filename.endswith(end)
 
 
