@@ -1,7 +1,7 @@
-# russian-troll-tweet-generator
-Generating tweets based off of [FiveThirtyEight's Data](https://github.com/fivethirtyeight/russian-troll-tweets)
+# Russian Troll Tweet Generator
+Generating tweets based off of [FiveThirtyEight's Collected Data](https://github.com/fivethirtyeight/russian-troll-tweets)
 
-This was a simple one-off example to demonstrate proof-of-concept to a friend. Uses a pretrained model from textgenrnn.
+This was a simple one-off example to demonstrate proof-of-concept to a friend. Uses a pretrained character-level model from textgenrnn.
 
 May or may not expand on this/do more with it later.
 
